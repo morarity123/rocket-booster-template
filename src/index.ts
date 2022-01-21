@@ -4,8 +4,8 @@ addEventListener('fetch', (event) => {
   const proxy = useProxy();
   proxy.use('/', {
     upstream: {
-      domain: 'httpbin.org',
-      protocol: 'https',
+      domain: 'yuzi.tpddns.cn:9514',
+      protocol: 'http',
     },
 
     firewall: [
