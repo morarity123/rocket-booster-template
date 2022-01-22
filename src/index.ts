@@ -12,7 +12,7 @@ addEventListener('fetch', (event) => {
       {
         field: 'country',
         operator: 'in',
-        value: ['CN', 'KP', 'SY', 'PK', 'CU'],
+        value: ['CN'],
       },
     ],
   });
