@@ -7,14 +7,6 @@ addEventListener('fetch', (event) => {
       domain: 'yuzi.tpddns.cn:9514',
       protocol: 'http',
     },
-
-    firewall: [
-      {
-        field: 'country',
-        operator: 'in',
-        value: ['CN'],
-      },
-    ],
   });
 
   const response = proxy.apply(event.request);
